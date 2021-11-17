@@ -3,7 +3,6 @@ const body = document.querySelector('body');
 
 body.addEventListener('click', function (e) {
 
-    // Меню в шапке
     if (e.target.classList.contains('_accept-btn') || e.target.parentNode.classList.contains('_accept-btn')) {
         e.preventDefault();
 
@@ -19,7 +18,7 @@ body.addEventListener('click', function (e) {
 
 
 const swiper = new Swiper('.swiper', {
-    // Default parameters
+
     slidesPerView: 1,
     spaceBetween: 30,
 
@@ -29,9 +28,7 @@ const swiper = new Swiper('.swiper', {
         prevEl: '.reviews__nav--arrow-prev',
     },
     
-    // Responsive breakpoints
     breakpoints: {
-      // when window width is >= 320px
       992: {
         slidesPerView: 3,
         
